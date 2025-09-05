@@ -1,5 +1,5 @@
 #!/usr/bin/env node
- 
+/* eslint-disable */
 // @ts-nocheck
 "use strict";
 
@@ -53,7 +53,8 @@ const RAW_RUNTIME_STATE =
           ["sass", "npm:1.92.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["typescript-eslint", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:8.42.0"],\
-          ["vite", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:7.1.4"]\
+          ["vite", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:7.1.4"],\
+          ["vite-tsconfig-paths", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:5.1.4"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -3128,7 +3129,8 @@ const RAW_RUNTIME_STATE =
           ["sass", "npm:1.92.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["typescript-eslint", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:8.42.0"],\
-          ["vite", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:7.1.4"]\
+          ["vite", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:7.1.4"],\
+          ["vite-tsconfig-paths", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:5.1.4"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -4092,6 +4094,15 @@ const RAW_RUNTIME_STATE =
           ["define-properties", "npm:1.2.1"],\
           ["globalthis", "npm:1.0.4"],\
           ["gopd", "npm:1.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["globrex", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "../../../Users/Serjge/AppData/Local/Yarn/Berry/cache/globrex-npm-0.1.2-ddda94f2d0-10c0.zip/node_modules/globrex/",\
+        "packageDependencies": [\
+          ["globrex", "npm:0.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7312,6 +7323,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["tsconfck", [\
+      ["npm:3.1.6", {\
+        "packageLocation": "../../../Users/Serjge/AppData/Local/Yarn/Berry/cache/tsconfck-npm-3.1.6-2dccdb1bd5-10c0.zip/node_modules/tsconfck/",\
+        "packageDependencies": [\
+          ["tsconfck", "npm:3.1.6"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:7ca76393ec2a94970bf1472be589b33cb23c7f5c98dddbb8f876e8bc4834c8d2ef901be4b9f0b75345af36fecab2022e5e24e819c3fe22fdc799410292acd27c#npm:3.1.6", {\
+        "packageLocation": "./.yarn/__virtual__/tsconfck-virtual-3e55d7f1d6/4/Users/Serjge/AppData/Local/Yarn/Berry/cache/tsconfck-npm-3.1.6-2dccdb1bd5-10c0.zip/node_modules/tsconfck/",\
+        "packageDependencies": [\
+          ["@types/typescript", null],\
+          ["tsconfck", "virtual:7ca76393ec2a94970bf1472be589b33cb23c7f5c98dddbb8f876e8bc4834c8d2ef901be4b9f0b75345af36fecab2022e5e24e819c3fe22fdc799410292acd27c#npm:3.1.6"],\
+          ["typescript", null]\
+        ],\
+        "packagePeers": [\
+          "@types/typescript",\
+          "typescript"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["tsconfig-paths", [\
       ["npm:3.15.0", {\
         "packageLocation": "../../../Users/Serjge/AppData/Local/Yarn/Berry/cache/tsconfig-paths-npm-3.15.0-ff68930e0e-10c0.zip/node_modules/tsconfig-paths/",\
@@ -7606,6 +7639,31 @@ const RAW_RUNTIME_STATE =
           "terser",\
           "tsx",\
           "yaml"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["vite-tsconfig-paths", [\
+      ["npm:5.1.4", {\
+        "packageLocation": "../../../Users/Serjge/AppData/Local/Yarn/Berry/cache/vite-tsconfig-paths-npm-5.1.4-7b9978a4d1-10c0.zip/node_modules/vite-tsconfig-paths/",\
+        "packageDependencies": [\
+          ["vite-tsconfig-paths", "npm:5.1.4"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:5.1.4", {\
+        "packageLocation": "./.yarn/__virtual__/vite-tsconfig-paths-virtual-7ca76393ec/4/Users/Serjge/AppData/Local/Yarn/Berry/cache/vite-tsconfig-paths-npm-5.1.4-7b9978a4d1-10c0.zip/node_modules/vite-tsconfig-paths/",\
+        "packageDependencies": [\
+          ["@types/vite", null],\
+          ["debug", "virtual:643ed7cc338bcf145a82d8b05b3bef6bcf150ca545df386225596f10ce53cc90b88b3ca83e348ade1ccea5f3f8e76c92d2f0e2ba544da60d40aff9921c56872d#npm:4.4.1"],\
+          ["globrex", "npm:0.1.2"],\
+          ["tsconfck", "virtual:7ca76393ec2a94970bf1472be589b33cb23c7f5c98dddbb8f876e8bc4834c8d2ef901be4b9f0b75345af36fecab2022e5e24e819c3fe22fdc799410292acd27c#npm:3.1.6"],\
+          ["vite", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:7.1.4"],\
+          ["vite-tsconfig-paths", "virtual:5a02ae441173846f7e6796dc68cfea1c8ef82648f3b293058ecfce5ab7382b1420c15a0b064a7933d8876a49fc35429fe937fb2482677cdbddd0e4532f08c4fb#npm:5.1.4"]\
+        ],\
+        "packagePeers": [\
+          "@types/vite",\
+          "vite"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -14391,7 +14449,7 @@ function arg(
 		}
 
 		if (wholeArg.length > 1 && wholeArg[0] === '-') {
-			 
+			/* eslint-disable operator-linebreak */
 			const separatedArguments =
 				wholeArg[1] === '-' || wholeArg.length === 2
 					? [wholeArg]
@@ -14399,7 +14457,7 @@ function arg(
 							.slice(1)
 							.split('')
 							.map((a) => `-${a}`);
-			 
+			/* eslint-enable operator-linebreak */
 
 			for (let j = 0; j < separatedArguments.length; j++) {
 				const arg = separatedArguments[j];
@@ -14442,7 +14500,7 @@ function arg(
 							!(
 								argv[i + 1].match(/^-?\d*(\.(?=\d))?\d*$/) &&
 								(type === Number ||
-									 
+									// eslint-disable-next-line no-undef
 									(typeof BigInt !== 'undefined' && type === BigInt))
 							))
 					) {
