@@ -1,15 +1,19 @@
 import { ShareholdersStructure } from 'src/components/ShareholdersStructure/ShareholdersStructure.tsx';
-import companySharesData from 'src/mock/data.json';
-import type { CompanySharesType } from 'src/types';
+import { useShareholders } from 'src/hooks/useShareholders.ts';
 import { filterDuplicateShareholders } from 'src/utils/';
 
-const companyShares: CompanySharesType = companySharesData;
-
 const App = () => {
-  const data = filterDuplicateShareholders(companyShares);
+  const { loading, data, error } = useShareholders();
+  console.log(loading, data, error);
+  console.log(filterDuplicateShareholders(data));
+  const filterData = filterDuplicateShareholders(data);
+
+  if (loading) return <p>Загрузка...</p>;
+  if (error) return <p>Ошибка: {error.message}</p>;
+
   return (
     <main className={'container'}>
-      <ShareholdersStructure shareholders={data['SBER']} />
+      <ShareholdersStructure shareholders={filterData['SBER']} />
     </main>
   );
 };
