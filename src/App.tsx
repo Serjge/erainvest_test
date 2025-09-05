@@ -1,12 +1,17 @@
+import { ShareholdersStructure } from 'src/components/ShareholdersStructure/ShareholdersStructure.tsx';
+import companySharesData from 'src/mock/data.json';
+import type { CompanySharesType } from 'src/types';
+import { filterDuplicateShareholders } from 'src/utils/';
 
-function App() {
+const companyShares: CompanySharesType = companySharesData;
 
-
+const App = () => {
+  const data = filterDuplicateShareholders(companyShares);
   return (
-      <div className={'container'}>
-        invest
-      </div>
-  )
-}
+    <main className={'container'}>
+      <ShareholdersStructure shareholders={data['SBER']} />
+    </main>
+  );
+};
 
-export default App
+export default App;

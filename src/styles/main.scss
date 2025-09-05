@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'src/styles/variables.scss' as *;
 
 * {
   margin: 0;
@@ -15,8 +15,15 @@ body {
 .container {
   max-width: 1440px;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0 20px;
   box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+
+  @media (max-width: $tab-size) {
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 

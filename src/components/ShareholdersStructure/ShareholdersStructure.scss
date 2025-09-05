@@ -1,0 +1,34 @@
+@use 'src/styles/variables' as *;
+
+  .content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: $card-color;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(23, 35, 57, 0.06);
+    padding: 2rem;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+
+    .title {
+      font-size: 22px;
+      font-weight: 600;
+      color: $primary-text-color;
+      margin: 0;
+      line-height: 30px;
+    }
+  }
+
+  .main-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+

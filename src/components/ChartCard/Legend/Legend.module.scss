@@ -1,0 +1,41 @@
+@use 'src/styles/variables' as *;
+
+.legend {
+  background: $card-color;
+  padding: 0 16px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid $border-color;
+}
+
+.color {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  border: 1px solid $border-color;
+}
+
+.label {
+  font-size: 16px;
+  color: $muted-text-color;
+  font-weight: 500;
+  flex-grow: 1;
+  padding-left: 5px;
+  @media (max-width: $tab-size) {
+      max-width: 100%;
+  }
+
+}
+
